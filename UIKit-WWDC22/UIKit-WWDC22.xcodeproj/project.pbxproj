@@ -18,6 +18,7 @@
 		C2AF56FB2AE1F13B00905500 /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56FA2AE1F13B00905500 /* HomeListViewModel.swift */; };
 		C2AF56FD2AE1F14700905500 /* HomeListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56FC2AE1F14700905500 /* HomeListCoordinator.swift */; };
 		C2AF57012AE1F41600905500 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF57002AE1F41600905500 /* App.swift */; };
+		C2AF57032AE333E200905500 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF57022AE333E200905500 /* Topic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C2AF56FA2AE1F13B00905500 /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
 		C2AF56FC2AE1F14700905500 /* HomeListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCoordinator.swift; sourceTree = "<group>"; };
 		C2AF57002AE1F41600905500 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		C2AF57022AE333E200905500 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +109,10 @@
 		C2AF56F72AE1F0E800905500 /* HomeList */ = {
 			isa = PBXGroup;
 			children = (
-				C2AF56FC2AE1F14700905500 /* HomeListCoordinator.swift */,
+				C2AF57022AE333E200905500 /* Topic.swift */,
 				C2AF56F82AE1F12F00905500 /* HomeListCollectionViewController.swift */,
 				C2AF56FA2AE1F13B00905500 /* HomeListViewModel.swift */,
+				C2AF56FC2AE1F14700905500 /* HomeListCoordinator.swift */,
 			);
 			path = HomeList;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2AF57012AE1F41600905500 /* App.swift in Sources */,
+				C2AF57032AE333E200905500 /* Topic.swift in Sources */,
 				C2AF56F32AE1EF8A00905500 /* Router.swift in Sources */,
 				C2AF56DB2AE1E7C100905500 /* AppDelegate.swift in Sources */,
 				C2AF56FB2AE1F13B00905500 /* HomeListViewModel.swift in Sources */,
