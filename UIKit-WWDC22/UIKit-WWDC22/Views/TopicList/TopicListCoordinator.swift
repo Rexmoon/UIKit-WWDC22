@@ -7,13 +7,13 @@
 
 import UIKit
 
-final class HomeListCoordinator<R: AppRouter> {
+final class TopicListCoordinator<R: AppRouter> {
     
     private let router: R
     
     private lazy var primaryViewController: UIViewController = {
-        let viewModel = HomeListViewModel(router: router)
-        let viewController = HomeListCollectionViewController(viewModel: viewModel)
+        let viewModel = TopicListViewModel(router: router)
+        let viewController = TopicListCollectionViewController(viewModel: viewModel)
         return viewController
     }()
     
@@ -22,7 +22,7 @@ final class HomeListCoordinator<R: AppRouter> {
     }
 }
 
-extension HomeListCoordinator: Coordinator {
+extension TopicListCoordinator: Coordinator {
     
     func start() {
         router.navController.pushViewController(primaryViewController, animated: true)

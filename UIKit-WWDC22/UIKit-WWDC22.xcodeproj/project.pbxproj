@@ -14,9 +14,9 @@
 		C2AF56F02AE1EF6A00905500 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56EF2AE1EF6A00905500 /* Coordinator.swift */; };
 		C2AF56F32AE1EF8A00905500 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56F22AE1EF8A00905500 /* Router.swift */; };
 		C2AF56F52AE1F01600905500 /* AppTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56F42AE1F01600905500 /* AppTransition.swift */; };
-		C2AF56F92AE1F12F00905500 /* HomeListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56F82AE1F12F00905500 /* HomeListCollectionViewController.swift */; };
-		C2AF56FB2AE1F13B00905500 /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56FA2AE1F13B00905500 /* HomeListViewModel.swift */; };
-		C2AF56FD2AE1F14700905500 /* HomeListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56FC2AE1F14700905500 /* HomeListCoordinator.swift */; };
+		C2AF56F92AE1F12F00905500 /* TopicListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56F82AE1F12F00905500 /* TopicListCollectionViewController.swift */; };
+		C2AF56FB2AE1F13B00905500 /* TopicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56FA2AE1F13B00905500 /* TopicListViewModel.swift */; };
+		C2AF56FD2AE1F14700905500 /* TopicListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56FC2AE1F14700905500 /* TopicListCoordinator.swift */; };
 		C2AF57012AE1F41600905500 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF57002AE1F41600905500 /* App.swift */; };
 		C2AF57032AE333E200905500 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF57022AE333E200905500 /* Topic.swift */; };
 /* End PBXBuildFile section */
@@ -31,9 +31,9 @@
 		C2AF56EF2AE1EF6A00905500 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C2AF56F22AE1EF8A00905500 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C2AF56F42AE1F01600905500 /* AppTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTransition.swift; sourceTree = "<group>"; };
-		C2AF56F82AE1F12F00905500 /* HomeListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCollectionViewController.swift; sourceTree = "<group>"; };
-		C2AF56FA2AE1F13B00905500 /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
-		C2AF56FC2AE1F14700905500 /* HomeListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCoordinator.swift; sourceTree = "<group>"; };
+		C2AF56F82AE1F12F00905500 /* TopicListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListCollectionViewController.swift; sourceTree = "<group>"; };
+		C2AF56FA2AE1F13B00905500 /* TopicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListViewModel.swift; sourceTree = "<group>"; };
+		C2AF56FC2AE1F14700905500 /* TopicListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListCoordinator.swift; sourceTree = "<group>"; };
 		C2AF57002AE1F41600905500 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		C2AF57022AE333E200905500 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,20 +101,20 @@
 		C2AF56F62AE1F0D000905500 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C2AF56F72AE1F0E800905500 /* HomeList */,
+				C2AF56F72AE1F0E800905500 /* TopicList */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		C2AF56F72AE1F0E800905500 /* HomeList */ = {
+		C2AF56F72AE1F0E800905500 /* TopicList */ = {
 			isa = PBXGroup;
 			children = (
 				C2AF57022AE333E200905500 /* Topic.swift */,
-				C2AF56F82AE1F12F00905500 /* HomeListCollectionViewController.swift */,
-				C2AF56FA2AE1F13B00905500 /* HomeListViewModel.swift */,
-				C2AF56FC2AE1F14700905500 /* HomeListCoordinator.swift */,
+				C2AF56F82AE1F12F00905500 /* TopicListCollectionViewController.swift */,
+				C2AF56FA2AE1F13B00905500 /* TopicListViewModel.swift */,
+				C2AF56FC2AE1F14700905500 /* TopicListCoordinator.swift */,
 			);
-			path = HomeList;
+			path = TopicList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,12 +191,12 @@
 				C2AF57032AE333E200905500 /* Topic.swift in Sources */,
 				C2AF56F32AE1EF8A00905500 /* Router.swift in Sources */,
 				C2AF56DB2AE1E7C100905500 /* AppDelegate.swift in Sources */,
-				C2AF56FB2AE1F13B00905500 /* HomeListViewModel.swift in Sources */,
+				C2AF56FB2AE1F13B00905500 /* TopicListViewModel.swift in Sources */,
 				C2AF56F52AE1F01600905500 /* AppTransition.swift in Sources */,
 				C2AF56DD2AE1E7C100905500 /* SceneDelegate.swift in Sources */,
-				C2AF56FD2AE1F14700905500 /* HomeListCoordinator.swift in Sources */,
+				C2AF56FD2AE1F14700905500 /* TopicListCoordinator.swift in Sources */,
 				C2AF56F02AE1EF6A00905500 /* Coordinator.swift in Sources */,
-				C2AF56F92AE1F12F00905500 /* HomeListCollectionViewController.swift in Sources */,
+				C2AF56F92AE1F12F00905500 /* TopicListCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

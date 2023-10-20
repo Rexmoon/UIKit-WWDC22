@@ -12,7 +12,7 @@ enum Section: CaseIterable {
     case main
 }
 
-final class HomeListCollectionViewController<ViewModel: HomeListViewModelRepresentable>: UICollectionViewController {
+final class TopicListCollectionViewController<ViewModel: TopicListViewModelRepresentable>: UICollectionViewController {
     
     typealias DataSource = UICollectionViewDiffableDataSource<Section, Topic>
     typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Topic>

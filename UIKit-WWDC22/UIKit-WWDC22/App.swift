@@ -27,6 +27,6 @@ final class App: AppRouter {
 
 extension App: Coordinator {
     func start() {
-        process(route: .showHomeList)
+        process(route: .showTopicList)
     }
 }

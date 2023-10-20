@@ -6,7 +6,7 @@
 //
 
 enum AppTransition {
-    case showHomeList
+    case showTopicList
     case showTopicDetail(Topic)
     
     var identifier: String { String(describing: self) }
@@ -15,8 +15,15 @@ enum AppTransition {
     
     func coordinatorFor<R: AppRouter>(router: R) -> Coordinator {
         switch self {
-            case .showHomeList: return HomeListCoordinator(router: router)
-            case .showTopicDetail: return HomeListCoordinator(router: router)
+            case .showTopicList: return TopicListCoordinator(router: router)
+            case .showTopicDetail: return TopicListCoordinator(router: router)
         }
+    }
+}
+
+extension AppTransition: Hashable {
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
     }
 }

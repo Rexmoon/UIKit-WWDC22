@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-protocol HomeListViewModelRepresentable {
+protocol TopicListViewModelRepresentable {
     
     var topicsValueSubject: CurrentValueSubject<[Topic], Error> { get }
     
@@ -16,7 +16,7 @@ protocol HomeListViewModelRepresentable {
     func didTapItem(with indexPath: IndexPath)
 }
 
-final class HomeListViewModel<R: AppRouter> {
+final class TopicListViewModel<R: AppRouter> {
     
     private let router: R
     
@@ -33,7 +33,7 @@ final class HomeListViewModel<R: AppRouter> {
     }
 }
 
-extension HomeListViewModel: HomeListViewModelRepresentable {
+extension TopicListViewModel: TopicListViewModelRepresentable {
     
     func loadData() {
         topics.append(Topic(name: "Page Control", description: "Description"))
