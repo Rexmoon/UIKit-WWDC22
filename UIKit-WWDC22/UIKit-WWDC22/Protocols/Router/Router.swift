@@ -18,3 +18,5 @@ protocol Router {
 }
 
 protocol AppRouter: Router where Route == AppTransition { }
+
+protocol TopicRouter: Router where Route == TopicTransition { }

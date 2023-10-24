@@ -7,7 +7,6 @@
 
 enum AppTransition {
     case showTopicList
-    case showTopicDetail(Topic)
     
     var identifier: String { String(describing: self) }
     
@@ -16,7 +15,6 @@ enum AppTransition {
     func coordinatorFor<R: AppRouter>(router: R) -> Coordinator {
         switch self {
             case .showTopicList: return TopicListCoordinator(router: router)
-            case .showTopicDetail: return TopicListCoordinator(router: router)
         }
     }
 }

@@ -16,7 +16,7 @@ protocol TopicListViewModelRepresentable {
     func didTapItem(with indexPath: IndexPath)
 }
 
-final class TopicListViewModel<R: AppRouter> {
+final class TopicListViewModel<R: TopicRouter> {
     
     private let router: R
     
@@ -42,9 +42,7 @@ extension TopicListViewModel: TopicListViewModelRepresentable {
     }
     
     func didTapItem(with indexPath: IndexPath) {
-        
         let topic = topics[indexPath.row]
-        
-        router.process(route: .showTopicDetail(topic))
+        router.process(route: .showPageControlDetail(topic))
     }
 }
