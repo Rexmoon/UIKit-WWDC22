@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C287A24B2AEAF92100FFBB96 /* ResizingCellsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A24A2AEAF92100FFBB96 /* ResizingCellsDetailViewController.swift */; };
+		C287A24E2AEB11B400FFBB96 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A24D2AEB11B400FFBB96 /* AppConfiguration.swift */; };
+		C287A2502AEB271F00FFBB96 /* Resizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A24F2AEB271F00FFBB96 /* Resizing.swift */; };
 		C2AF56DB2AE1E7C100905500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56DA2AE1E7C100905500 /* AppDelegate.swift */; };
 		C2AF56DD2AE1E7C100905500 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56DC2AE1E7C100905500 /* SceneDelegate.swift */; };
 		C2AF56E42AE1E7C300905500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2AF56E32AE1E7C300905500 /* Assets.xcassets */; };
@@ -20,11 +23,15 @@
 		C2AF57012AE1F41600905500 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF57002AE1F41600905500 /* App.swift */; };
 		C2AF57032AE333E200905500 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF57022AE333E200905500 /* Topic.swift */; };
 		C2AF57082AE33D1300905500 /* TopicTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF57072AE33D1300905500 /* TopicTransition.swift */; };
-		C2AF570A2AE33E9300905500 /* TopicDetailPageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF57092AE33E9300905500 /* TopicDetailPageControlViewController.swift */; };
-		C2AF570C2AE33FB900905500 /* TopicDetailPageControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF570B2AE33FB900905500 /* TopicDetailPageControlViewModel.swift */; };
+		C2AF570A2AE33E9300905500 /* PageControlDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF57092AE33E9300905500 /* PageControlDetailViewController.swift */; };
+		C2AF570C2AE33FB900905500 /* PageControlDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF570B2AE33FB900905500 /* PageControlDetailViewModel.swift */; };
+		C2EF1D372AE88208008EF352 /* ResizingCellsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EF1D362AE88208008EF352 /* ResizingCellsDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C287A24A2AEAF92100FFBB96 /* ResizingCellsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingCellsDetailViewController.swift; sourceTree = "<group>"; };
+		C287A24D2AEB11B400FFBB96 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		C287A24F2AEB271F00FFBB96 /* Resizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resizing.swift; sourceTree = "<group>"; };
 		C2AF56D72AE1E7C100905500 /* UIKit-WWDC22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit-WWDC22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2AF56DA2AE1E7C100905500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2AF56DC2AE1E7C100905500 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +47,9 @@
 		C2AF57002AE1F41600905500 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		C2AF57022AE333E200905500 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		C2AF57072AE33D1300905500 /* TopicTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTransition.swift; sourceTree = "<group>"; };
-		C2AF57092AE33E9300905500 /* TopicDetailPageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailPageControlViewController.swift; sourceTree = "<group>"; };
-		C2AF570B2AE33FB900905500 /* TopicDetailPageControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailPageControlViewModel.swift; sourceTree = "<group>"; };
+		C2AF57092AE33E9300905500 /* PageControlDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlDetailViewController.swift; sourceTree = "<group>"; };
+		C2AF570B2AE33FB900905500 /* PageControlDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlDetailViewModel.swift; sourceTree = "<group>"; };
+		C2EF1D362AE88208008EF352 /* ResizingCellsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingCellsDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C287A24C2AEB119500FFBB96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C287A24D2AEB11B400FFBB96 /* AppConfiguration.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C2AF56CE2AE1E7C100905500 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +94,7 @@
 				C2AF56F42AE1F01600905500 /* AppTransition.swift */,
 				C2AF56DA2AE1E7C100905500 /* AppDelegate.swift */,
 				C2AF56DC2AE1E7C100905500 /* SceneDelegate.swift */,
+				C287A24C2AEB119500FFBB96 /* Extensions */,
 				C2AF56EE2AE1EDA700905500 /* Protocols */,
 				C2AF56F62AE1F0D000905500 /* Views */,
 				C2AF56E32AE1E7C300905500 /* Assets.xcassets */,
@@ -128,10 +145,29 @@
 		C2AF57042AE33BC300905500 /* TopicDetail */ = {
 			isa = PBXGroup;
 			children = (
-				C2AF57092AE33E9300905500 /* TopicDetailPageControlViewController.swift */,
-				C2AF570B2AE33FB900905500 /* TopicDetailPageControlViewModel.swift */,
+				C2EF1D322AE881B5008EF352 /* PageControll */,
+				C2EF1D332AE881C7008EF352 /* ResizingCells */,
 			);
 			path = TopicDetail;
+			sourceTree = "<group>";
+		};
+		C2EF1D322AE881B5008EF352 /* PageControll */ = {
+			isa = PBXGroup;
+			children = (
+				C2AF57092AE33E9300905500 /* PageControlDetailViewController.swift */,
+				C2AF570B2AE33FB900905500 /* PageControlDetailViewModel.swift */,
+			);
+			path = PageControll;
+			sourceTree = "<group>";
+		};
+		C2EF1D332AE881C7008EF352 /* ResizingCells */ = {
+			isa = PBXGroup;
+			children = (
+				C287A24F2AEB271F00FFBB96 /* Resizing.swift */,
+				C287A24A2AEAF92100FFBB96 /* ResizingCellsDetailViewController.swift */,
+				C2EF1D362AE88208008EF352 /* ResizingCellsDetailViewModel.swift */,
+			);
+			path = ResizingCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2AF57012AE1F41600905500 /* App.swift in Sources */,
+				C287A2502AEB271F00FFBB96 /* Resizing.swift in Sources */,
 				C2AF57032AE333E200905500 /* Topic.swift in Sources */,
 				C2AF56F32AE1EF8A00905500 /* Router.swift in Sources */,
 				C2AF56DB2AE1E7C100905500 /* AppDelegate.swift in Sources */,
@@ -212,9 +249,12 @@
 				C2AF56F52AE1F01600905500 /* AppTransition.swift in Sources */,
 				C2AF57082AE33D1300905500 /* TopicTransition.swift in Sources */,
 				C2AF56DD2AE1E7C100905500 /* SceneDelegate.swift in Sources */,
-				C2AF570C2AE33FB900905500 /* TopicDetailPageControlViewModel.swift in Sources */,
-				C2AF570A2AE33E9300905500 /* TopicDetailPageControlViewController.swift in Sources */,
+				C2AF570C2AE33FB900905500 /* PageControlDetailViewModel.swift in Sources */,
+				C2AF570A2AE33E9300905500 /* PageControlDetailViewController.swift in Sources */,
 				C2AF56FD2AE1F14700905500 /* TopicListCoordinator.swift in Sources */,
+				C287A24E2AEB11B400FFBB96 /* AppConfiguration.swift in Sources */,
+				C287A24B2AEAF92100FFBB96 /* ResizingCellsDetailViewController.swift in Sources */,
+				C2EF1D372AE88208008EF352 /* ResizingCellsDetailViewModel.swift in Sources */,
 				C2AF56F02AE1EF6A00905500 /* Coordinator.swift in Sources */,
 				C2AF56F92AE1F12F00905500 /* TopicListCollectionViewController.swift in Sources */,
 			);

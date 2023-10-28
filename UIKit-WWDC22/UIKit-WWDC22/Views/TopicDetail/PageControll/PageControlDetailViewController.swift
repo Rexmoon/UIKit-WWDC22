@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TopicDetailPageControlViewController<ViewModel: TopicDetailPageControlViewModelRepresentable>: UIViewController, UIScrollViewDelegate {
+final class PageControlDetailViewController<ViewModel: PageControlDetailViewModelRepresentable>: UIViewController, UIScrollViewDelegate {
     
     private let viewModel: ViewModel
     
@@ -63,7 +63,6 @@ final class TopicDetailPageControlViewController<ViewModel: TopicDetailPageContr
     
     private func setupUI() {
         title = viewModel.topic.name
-        view.backgroundColor = .white
         
         view.addSubview(pageControl)
         view.addSubview(scrollView)

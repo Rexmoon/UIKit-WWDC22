@@ -28,7 +28,8 @@ final class TopicListCollectionViewController<ViewModel: TopicListViewModelRepre
             var configuration = cell.defaultContentConfiguration()
             
             configuration.text = item.name
-            configuration.image = UIImage(systemName: "book")
+            
+            configuration.image = TopicImage.allCases[indexPath.row].image
             
             cell.contentConfiguration = configuration
             cell.accessories = [.disclosureIndicator()]

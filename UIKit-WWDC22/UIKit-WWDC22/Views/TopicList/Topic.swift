@@ -6,6 +6,21 @@
 //
 
 import Foundation
+import UIKit
+
+enum TopicImage: CaseIterable {
+    case pageControl
+    case resizingCell
+    case withSwiftUI
+    
+    var image: UIImage? {
+        switch self {
+            case .pageControl: return UIImage(systemName: "book.pages")
+            case .resizingCell: return UIImage(systemName: "tablecells")
+            case .withSwiftUI: return UIImage(systemName: "cube")
+        }
+    }
+}
 
 struct Topic {
     let id = UUID()

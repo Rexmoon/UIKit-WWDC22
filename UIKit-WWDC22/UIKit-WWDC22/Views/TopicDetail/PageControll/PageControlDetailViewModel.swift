@@ -5,12 +5,12 @@
 //  Created by Bryan Luna on 10/20/23.
 //
 
-protocol TopicDetailPageControlViewModelRepresentable {
+protocol PageControlDetailViewModelRepresentable {
     
     var topic: Topic { get }
 }
 
-final class TopicDetailPageControlViewModel {
+final class PageControlDetailViewModel {
     
     var topic: Topic
     
@@ -19,4 +19,4 @@ final class TopicDetailPageControlViewModel {
     }
 }
 
-extension TopicDetailPageControlViewModel: TopicDetailPageControlViewModelRepresentable { }
+extension PageControlDetailViewModel: PageControlDetailViewModelRepresentable { }

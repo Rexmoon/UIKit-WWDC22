@@ -38,8 +38,13 @@ extension TopicListCoordinator: TopicRouter {
     func process(route: TopicTransition) {
         switch route {
             case .showPageControlDetail(let topic):
-                let viewModel = TopicDetailPageControlViewModel(topic: topic)
-                let viewController = TopicDetailPageControlViewController(viewModel: viewModel)
+                let viewModel = PageControlDetailViewModel(topic: topic)
+                let viewController = PageControlDetailViewController(viewModel: viewModel)
+                router.navController.pushViewController(viewController, animated: true)
+                
+            case .showResizingViewDetail(let topic):
+                let viewModel = ResizingCellsDetailViewModel(topic: topic)
+                let viewController = ResizingCellsDetailViewController(viewModel: viewModel)
                 router.navController.pushViewController(viewController, animated: true)
         }
     }
