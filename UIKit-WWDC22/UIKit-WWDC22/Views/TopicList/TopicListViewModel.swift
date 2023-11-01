@@ -45,6 +45,7 @@ extension TopicListViewModel: TopicListViewModelRepresentable {
         switch indexPath.row {
             case 0: router.process(route: .showPageControlDetail(topics[indexPath.row]))
             case 1: router.process(route: .showResizingViewDetail(topics[indexPath.row]))
+            case 2: router.process(route: .showHostingConfigurationViewDetail(topics[indexPath.row]))
             default: break
         }
     }

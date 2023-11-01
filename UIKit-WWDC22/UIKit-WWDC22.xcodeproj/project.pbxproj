@@ -10,6 +10,12 @@
 		C287A24B2AEAF92100FFBB96 /* ResizingCellsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A24A2AEAF92100FFBB96 /* ResizingCellsDetailViewController.swift */; };
 		C287A24E2AEB11B400FFBB96 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A24D2AEB11B400FFBB96 /* AppConfiguration.swift */; };
 		C287A2502AEB271F00FFBB96 /* Resizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A24F2AEB271F00FFBB96 /* Resizing.swift */; };
+		C287A2532AED650A00FFBB96 /* HostingConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A2522AED650A00FFBB96 /* HostingConfigurationViewModel.swift */; };
+		C287A2552AED659800FFBB96 /* HostingConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A2542AED659800FFBB96 /* HostingConfigurationViewController.swift */; };
+		C287A25B2AED73D600FFBB96 /* ReusableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A2592AED73D600FFBB96 /* ReusableTableViewCell.swift */; };
+		C287A25C2AED73D600FFBB96 /* ReusableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C287A25A2AED73D600FFBB96 /* ReusableTableViewCell.xib */; };
+		C287A25E2AED753A00FFBB96 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A25D2AED753A00FFBB96 /* SwiftUIView.swift */; };
+		C287A2602AED7C7D00FFBB96 /* HostingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A25F2AED7C7D00FFBB96 /* HostingConfiguration.swift */; };
 		C2AF56DB2AE1E7C100905500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56DA2AE1E7C100905500 /* AppDelegate.swift */; };
 		C2AF56DD2AE1E7C100905500 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF56DC2AE1E7C100905500 /* SceneDelegate.swift */; };
 		C2AF56E42AE1E7C300905500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2AF56E32AE1E7C300905500 /* Assets.xcassets */; };
@@ -32,6 +38,12 @@
 		C287A24A2AEAF92100FFBB96 /* ResizingCellsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingCellsDetailViewController.swift; sourceTree = "<group>"; };
 		C287A24D2AEB11B400FFBB96 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		C287A24F2AEB271F00FFBB96 /* Resizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resizing.swift; sourceTree = "<group>"; };
+		C287A2522AED650A00FFBB96 /* HostingConfigurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingConfigurationViewModel.swift; sourceTree = "<group>"; };
+		C287A2542AED659800FFBB96 /* HostingConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingConfigurationViewController.swift; sourceTree = "<group>"; };
+		C287A2592AED73D600FFBB96 /* ReusableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewCell.swift; sourceTree = "<group>"; };
+		C287A25A2AED73D600FFBB96 /* ReusableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableTableViewCell.xib; sourceTree = "<group>"; };
+		C287A25D2AED753A00FFBB96 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		C287A25F2AED7C7D00FFBB96 /* HostingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingConfiguration.swift; sourceTree = "<group>"; };
 		C2AF56D72AE1E7C100905500 /* UIKit-WWDC22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit-WWDC22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2AF56DA2AE1E7C100905500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2AF56DC2AE1E7C100905500 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +81,27 @@
 				C287A24D2AEB11B400FFBB96 /* AppConfiguration.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C287A2512AED60C200FFBB96 /* HostingConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				C287A25F2AED7C7D00FFBB96 /* HostingConfiguration.swift */,
+				C287A2542AED659800FFBB96 /* HostingConfigurationViewController.swift */,
+				C287A2522AED650A00FFBB96 /* HostingConfigurationViewModel.swift */,
+				C287A2562AED72FF00FFBB96 /* Cells */,
+			);
+			path = HostingConfiguration;
+			sourceTree = "<group>";
+		};
+		C287A2562AED72FF00FFBB96 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C287A2592AED73D600FFBB96 /* ReusableTableViewCell.swift */,
+				C287A25A2AED73D600FFBB96 /* ReusableTableViewCell.xib */,
+				C287A25D2AED753A00FFBB96 /* SwiftUIView.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C2AF56CE2AE1E7C100905500 = {
@@ -147,6 +180,7 @@
 			children = (
 				C2EF1D322AE881B5008EF352 /* PageControll */,
 				C2EF1D332AE881C7008EF352 /* ResizingCells */,
+				C287A2512AED60C200FFBB96 /* HostingConfiguration */,
 			);
 			path = TopicDetail;
 			sourceTree = "<group>";
@@ -229,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2AF56E72AE1E7C300905500 /* LaunchScreen.storyboard in Resources */,
+				C287A25C2AED73D600FFBB96 /* ReusableTableViewCell.xib in Resources */,
 				C2AF56E42AE1E7C300905500 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,8 +279,13 @@
 				C287A2502AEB271F00FFBB96 /* Resizing.swift in Sources */,
 				C2AF57032AE333E200905500 /* Topic.swift in Sources */,
 				C2AF56F32AE1EF8A00905500 /* Router.swift in Sources */,
+				C287A2532AED650A00FFBB96 /* HostingConfigurationViewModel.swift in Sources */,
+				C287A2602AED7C7D00FFBB96 /* HostingConfiguration.swift in Sources */,
+				C287A2552AED659800FFBB96 /* HostingConfigurationViewController.swift in Sources */,
 				C2AF56DB2AE1E7C100905500 /* AppDelegate.swift in Sources */,
 				C2AF56FB2AE1F13B00905500 /* TopicListViewModel.swift in Sources */,
+				C287A25E2AED753A00FFBB96 /* SwiftUIView.swift in Sources */,
+				C287A25B2AED73D600FFBB96 /* ReusableTableViewCell.swift in Sources */,
 				C2AF56F52AE1F01600905500 /* AppTransition.swift in Sources */,
 				C2AF57082AE33D1300905500 /* TopicTransition.swift in Sources */,
 				C2AF56DD2AE1E7C100905500 /* SceneDelegate.swift in Sources */,

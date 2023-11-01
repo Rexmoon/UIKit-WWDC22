@@ -46,6 +46,11 @@ extension TopicListCoordinator: TopicRouter {
                 let viewModel = ResizingCellsDetailViewModel(topic: topic)
                 let viewController = ResizingCellsDetailViewController(viewModel: viewModel)
                 router.navController.pushViewController(viewController, animated: true)
+                
+            case .showHostingConfigurationViewDetail(let topic):
+                let viewModel = HostingConfigurationViewModel(topic: topic)
+                let viewController = HostingConfigurationViewController(viewModel: viewModel)
+                router.navController.pushViewController(viewController, animated: true)
         }
     }
     

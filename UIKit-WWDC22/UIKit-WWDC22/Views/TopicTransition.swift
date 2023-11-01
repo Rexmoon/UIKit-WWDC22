@@ -9,6 +9,7 @@ enum TopicTransition {
     
     case showPageControlDetail(Topic)
     case showResizingViewDetail(Topic)
+    case showHostingConfigurationViewDetail(Topic)
     
     var identifier: String { String(describing: self) }
 }

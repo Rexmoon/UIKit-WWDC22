@@ -75,7 +75,8 @@ final class ResizingCellsDetailViewController<ViewModel: ResizingCellsDetailView
         var snapshot = Snapshot()
         
         snapshot.appendSections(Section.allCases)
-        snapshot.appendItems(with)
+        
+        Section.allCases.forEach { snapshot.appendItems(with, toSection: $0) }
         
         dataSource.apply(snapshot, animatingDifferences: true)
     }
