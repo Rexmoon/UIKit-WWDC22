@@ -17,14 +17,17 @@ final class HostingConfigurationViewController<ViewModel: HostingConfigurationVi
     typealias CollectionViewDatasource = UICollectionViewDiffableDataSource<Section, HostingConfiguration>
     typealias CollectionViewSnapshot = NSDiffableDataSourceSnapshot<Section, HostingConfiguration>
     
+    // MARK: - Properties
+    
     private let viewModel: ViewModel
     
     private var cancellables: Set<AnyCancellable> = .init()
     
     private lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = .blue
+        let tableView = UITableView(frame: CGRect(x: 0,
+                                                  y: 0,
+                                                  width: view.bounds.width,
+                                                  height: view.bounds.height * 0.5))
         return tableView
     }()
     
@@ -49,10 +52,11 @@ final class HostingConfigurationViewController<ViewModel: HostingConfigurationVi
     }()
     
     private lazy var collectionView: UICollectionView = {
-        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0),
+        let collectionView = UICollectionView(frame: CGRect(x: 0,
+                                                            y: view.bounds.height * 0.5,
+                                                            width: view.bounds.width,
+                                                            height: view.bounds.height * 0.5),
                                               collectionViewLayout: Self.generateLayout())
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .red
         return collectionView
     }()
     
@@ -68,6 +72,8 @@ final class HostingConfigurationViewController<ViewModel: HostingConfigurationVi
         }
     }()
     
+    // MARK: - Initializers
+    
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -77,11 +83,15 @@ final class HostingConfigurationViewController<ViewModel: HostingConfigurationVi
         fatalError()
     }
     
+    // MARK: - Lifecyle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         bindUI()
     }
+    
+    // MARK: - Functions
     
     private func setupUI() {
         
@@ -89,20 +99,6 @@ final class HostingConfigurationViewController<ViewModel: HostingConfigurationVi
         
         view.addSubview(tableView)
         view.addSubview(collectionView)
-        
-        let inset: CGFloat = 10
-        
-        NSLayoutConstraint.activate([
-            tableView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            tableView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -inset),
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.bottomAnchor.constraint(equalToSystemSpacingBelow: view.bottomAnchor, multiplier: 0.5),
-            
-            collectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            collectionView.topAnchor.constraint(equalTo: tableView.bottomAnchor),
-            collectionView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -inset),
-            collectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5)
-        ])
         
         setupTableView()
     }
@@ -113,7 +109,7 @@ final class HostingConfigurationViewController<ViewModel: HostingConfigurationVi
     }
     
     private static func generateLayout() -> UICollectionViewLayout {
-        let configuration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+        let configuration = UICollectionLayoutListConfiguration(appearance: .plain)
         return UICollectionViewCompositionalLayout.list(using: configuration)
     }
     

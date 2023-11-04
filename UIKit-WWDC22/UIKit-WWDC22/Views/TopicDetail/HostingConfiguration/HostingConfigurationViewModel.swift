@@ -25,7 +25,7 @@ final class HostingConfigurationViewModel {
     
     private var collectionViewEntities: [HostingConfiguration] = [] {
         didSet {
-            tableViewEntitiesPassthroughSubject.send(collectionViewEntities)
+            collectionViewEntitiesPassthroughSubject.send(collectionViewEntities)
         }
     }
     
@@ -40,11 +40,11 @@ final class HostingConfigurationViewModel {
 
 extension HostingConfigurationViewModel: HostingConfigurationViewModelRepresentable {
     func loadData() {
-        (0...5).forEach {
+        (0...10).forEach {
             tableViewEntities.append(HostingConfiguration(text: "\($0)", type: .forTableView))
         }
         
-        (0...5).forEach {
+        (0...10).forEach {
             collectionViewEntities.append(HostingConfiguration(text: "\($0)", type: .forCollectionView))
         }
     }
