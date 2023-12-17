@@ -32,6 +32,11 @@
 		C2AF570A2AE33E9300905500 /* PageControlDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF57092AE33E9300905500 /* PageControlDetailViewController.swift */; };
 		C2AF570C2AE33FB900905500 /* PageControlDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF570B2AE33FB900905500 /* PageControlDetailViewModel.swift */; };
 		C2EF1D372AE88208008EF352 /* ResizingCellsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EF1D362AE88208008EF352 /* ResizingCellsDetailViewModel.swift */; };
+		CE094EDA2B2E6CC80017CF40 /* CustomizingSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094ED92B2E6CC80017CF40 /* CustomizingSheetViewModel.swift */; };
+		CE094EDC2B2E6CD40017CF40 /* CustomizingSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094EDB2B2E6CD40017CF40 /* CustomizingSheetViewController.swift */; };
+		CE094EDE2B2E6CE60017CF40 /* CustomizingSheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094EDD2B2E6CE60017CF40 /* CustomizingSheetCoordinator.swift */; };
+		CE094EE02B2E6EBB0017CF40 /* CustomizingSheetTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094EDF2B2E6EBB0017CF40 /* CustomizingSheetTransition.swift */; };
+		CE094EE22B2E77240017CF40 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094EE12B2E77240017CF40 /* SheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,11 @@
 		C2AF57092AE33E9300905500 /* PageControlDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlDetailViewController.swift; sourceTree = "<group>"; };
 		C2AF570B2AE33FB900905500 /* PageControlDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlDetailViewModel.swift; sourceTree = "<group>"; };
 		C2EF1D362AE88208008EF352 /* ResizingCellsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingCellsDetailViewModel.swift; sourceTree = "<group>"; };
+		CE094ED92B2E6CC80017CF40 /* CustomizingSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingSheetViewModel.swift; sourceTree = "<group>"; };
+		CE094EDB2B2E6CD40017CF40 /* CustomizingSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingSheetViewController.swift; sourceTree = "<group>"; };
+		CE094EDD2B2E6CE60017CF40 /* CustomizingSheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingSheetCoordinator.swift; sourceTree = "<group>"; };
+		CE094EDF2B2E6EBB0017CF40 /* CustomizingSheetTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingSheetTransition.swift; sourceTree = "<group>"; };
+		CE094EE12B2E77240017CF40 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +188,7 @@
 		C2AF57042AE33BC300905500 /* TopicDetail */ = {
 			isa = PBXGroup;
 			children = (
+				CE094ED82B2E6C1A0017CF40 /* CustomizingSheet */,
 				C2EF1D322AE881B5008EF352 /* PageControll */,
 				C2EF1D332AE881C7008EF352 /* ResizingCells */,
 				C287A2512AED60C200FFBB96 /* HostingConfiguration */,
@@ -202,6 +213,18 @@
 				C2EF1D362AE88208008EF352 /* ResizingCellsDetailViewModel.swift */,
 			);
 			path = ResizingCells;
+			sourceTree = "<group>";
+		};
+		CE094ED82B2E6C1A0017CF40 /* CustomizingSheet */ = {
+			isa = PBXGroup;
+			children = (
+				CE094EDF2B2E6EBB0017CF40 /* CustomizingSheetTransition.swift */,
+				CE094EDD2B2E6CE60017CF40 /* CustomizingSheetCoordinator.swift */,
+				CE094EDB2B2E6CD40017CF40 /* CustomizingSheetViewController.swift */,
+				CE094ED92B2E6CC80017CF40 /* CustomizingSheetViewModel.swift */,
+				CE094EE12B2E77240017CF40 /* SheetViewController.swift */,
+			);
+			path = CustomizingSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +301,7 @@
 				C2AF57012AE1F41600905500 /* App.swift in Sources */,
 				C287A2502AEB271F00FFBB96 /* Resizing.swift in Sources */,
 				C2AF57032AE333E200905500 /* Topic.swift in Sources */,
+				CE094EE22B2E77240017CF40 /* SheetViewController.swift in Sources */,
 				C2AF56F32AE1EF8A00905500 /* Router.swift in Sources */,
 				C287A2532AED650A00FFBB96 /* HostingConfigurationViewModel.swift in Sources */,
 				C287A2602AED7C7D00FFBB96 /* HostingConfiguration.swift in Sources */,
@@ -286,11 +310,15 @@
 				C2AF56FB2AE1F13B00905500 /* TopicListViewModel.swift in Sources */,
 				C287A25E2AED753A00FFBB96 /* SwiftUIView.swift in Sources */,
 				C287A25B2AED73D600FFBB96 /* ReusableTableViewCell.swift in Sources */,
+				CE094EDC2B2E6CD40017CF40 /* CustomizingSheetViewController.swift in Sources */,
+				CE094EE02B2E6EBB0017CF40 /* CustomizingSheetTransition.swift in Sources */,
 				C2AF56F52AE1F01600905500 /* AppTransition.swift in Sources */,
 				C2AF57082AE33D1300905500 /* TopicTransition.swift in Sources */,
+				CE094EDE2B2E6CE60017CF40 /* CustomizingSheetCoordinator.swift in Sources */,
 				C2AF56DD2AE1E7C100905500 /* SceneDelegate.swift in Sources */,
 				C2AF570C2AE33FB900905500 /* PageControlDetailViewModel.swift in Sources */,
 				C2AF570A2AE33E9300905500 /* PageControlDetailViewController.swift in Sources */,
+				CE094EDA2B2E6CC80017CF40 /* CustomizingSheetViewModel.swift in Sources */,
 				C2AF56FD2AE1F14700905500 /* TopicListCoordinator.swift in Sources */,
 				C287A24E2AEB11B400FFBB96 /* AppConfiguration.swift in Sources */,
 				C287A24B2AEAF92100FFBB96 /* ResizingCellsDetailViewController.swift in Sources */,

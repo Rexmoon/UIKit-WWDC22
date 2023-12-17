@@ -12,12 +12,14 @@ enum TopicImage: CaseIterable {
     case pageControl
     case resizingCell
     case withSwiftUI
+    case customizingSheet
     
     var image: UIImage? {
         switch self {
             case .pageControl: return UIImage(systemName: "book.pages")
             case .resizingCell: return UIImage(systemName: "tablecells")
             case .withSwiftUI: return UIImage(systemName: "cube")
+            case .customizingSheet: return UIImage(systemName: "book.pages")
         }
     }
 }

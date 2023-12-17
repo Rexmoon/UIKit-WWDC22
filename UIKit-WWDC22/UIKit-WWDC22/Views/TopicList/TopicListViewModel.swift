@@ -39,6 +39,7 @@ extension TopicListViewModel: TopicListViewModelRepresentable {
         topics.append(Topic(name: "Page Control", description: "Description"))
         topics.append(Topic(name: "Self resizing cells", description: "Description"))
         topics.append(Topic(name: "SwiftUI View in UIKit", description: "Description"))
+        topics.append(Topic(name: "Customizing Sheet", description: "Description"))
     }
     
     func didTapItem(with indexPath: IndexPath) {
@@ -46,6 +47,7 @@ extension TopicListViewModel: TopicListViewModelRepresentable {
             case 0: router.process(route: .showPageControlDetail(topics[indexPath.row]))
             case 1: router.process(route: .showResizingViewDetail(topics[indexPath.row]))
             case 2: router.process(route: .showHostingConfigurationViewDetail(topics[indexPath.row]))
+            case 3: router.process(route: .showCustomizingSheet(topics[indexPath.row]))
             default: break
         }
     }

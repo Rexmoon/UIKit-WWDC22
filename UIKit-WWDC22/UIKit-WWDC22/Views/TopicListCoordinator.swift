@@ -51,6 +51,9 @@ extension TopicListCoordinator: TopicRouter {
                 let viewModel = HostingConfigurationViewModel(topic: topic)
                 let viewController = HostingConfigurationViewController(viewModel: viewModel)
                 router.navController.pushViewController(viewController, animated: true)
+                
+            case .showCustomizingSheet(let topic):
+                router.process(route: .showCustomizingSheet(topic))
         }
     }
     
