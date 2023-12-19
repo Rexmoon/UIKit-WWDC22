@@ -54,6 +54,10 @@ extension TopicListCoordinator: TopicRouter {
                 
             case .showCustomizingSheet(let topic):
                 router.process(route: .showCustomizingSheet(topic))
+                
+            case .showSFSymbol(let topic): 
+                let viewController = SFSymbolViewController(topic: topic)
+                router.navController.pushViewController(viewController, animated: true)
         }
     }
     

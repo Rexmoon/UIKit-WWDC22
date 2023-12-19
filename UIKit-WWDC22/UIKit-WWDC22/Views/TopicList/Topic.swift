@@ -13,6 +13,7 @@ enum TopicImage: CaseIterable {
     case resizingCell
     case withSwiftUI
     case customizingSheet
+    case sfSymbol
     
     var image: UIImage? {
         switch self {
@@ -20,6 +21,7 @@ enum TopicImage: CaseIterable {
             case .resizingCell: return UIImage(systemName: "tablecells")
             case .withSwiftUI: return UIImage(systemName: "cube")
             case .customizingSheet: return UIImage(systemName: "book.pages")
+            case .sfSymbol: return UIImage(systemName: "applepencil")
         }
     }
 }

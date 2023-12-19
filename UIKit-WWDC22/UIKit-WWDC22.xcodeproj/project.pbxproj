@@ -37,6 +37,7 @@
 		CE094EDE2B2E6CE60017CF40 /* CustomizingSheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094EDD2B2E6CE60017CF40 /* CustomizingSheetCoordinator.swift */; };
 		CE094EE02B2E6EBB0017CF40 /* CustomizingSheetTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094EDF2B2E6EBB0017CF40 /* CustomizingSheetTransition.swift */; };
 		CE094EE22B2E77240017CF40 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE094EE12B2E77240017CF40 /* SheetViewController.swift */; };
+		CE0CA6092B31EE2200F8F47C /* SFSymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CA6082B31EE2200F8F47C /* SFSymbolViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		CE094EDD2B2E6CE60017CF40 /* CustomizingSheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingSheetCoordinator.swift; sourceTree = "<group>"; };
 		CE094EDF2B2E6EBB0017CF40 /* CustomizingSheetTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingSheetTransition.swift; sourceTree = "<group>"; };
 		CE094EE12B2E77240017CF40 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
+		CE0CA6082B31EE2200F8F47C /* SFSymbolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 		C2AF57042AE33BC300905500 /* TopicDetail */ = {
 			isa = PBXGroup;
 			children = (
+				CE0CA6072B31EE0400F8F47C /* SFSymbol */,
 				CE094ED82B2E6C1A0017CF40 /* CustomizingSheet */,
 				C2EF1D322AE881B5008EF352 /* PageControll */,
 				C2EF1D332AE881C7008EF352 /* ResizingCells */,
@@ -225,6 +228,14 @@
 				CE094EE12B2E77240017CF40 /* SheetViewController.swift */,
 			);
 			path = CustomizingSheet;
+			sourceTree = "<group>";
+		};
+		CE0CA6072B31EE0400F8F47C /* SFSymbol */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CA6082B31EE2200F8F47C /* SFSymbolViewController.swift */,
+			);
+			path = SFSymbol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +334,7 @@
 				C287A24E2AEB11B400FFBB96 /* AppConfiguration.swift in Sources */,
 				C287A24B2AEAF92100FFBB96 /* ResizingCellsDetailViewController.swift in Sources */,
 				C2EF1D372AE88208008EF352 /* ResizingCellsDetailViewModel.swift in Sources */,
+				CE0CA6092B31EE2200F8F47C /* SFSymbolViewController.swift in Sources */,
 				C2AF56F02AE1EF6A00905500 /* Coordinator.swift in Sources */,
 				C2AF56F92AE1F12F00905500 /* TopicListCollectionViewController.swift in Sources */,
 			);

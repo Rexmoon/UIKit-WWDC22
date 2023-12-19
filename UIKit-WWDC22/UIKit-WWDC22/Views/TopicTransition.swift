@@ -11,6 +11,7 @@ enum TopicTransition {
     case showResizingViewDetail(Topic)
     case showHostingConfigurationViewDetail(Topic)
     case showCustomizingSheet(Topic)
+    case showSFSymbol(Topic)
     
     var identifier: String { String(describing: self) }
 }
